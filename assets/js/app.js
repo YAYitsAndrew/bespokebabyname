@@ -5,6 +5,7 @@ var generateName = function () {
   var emoji2 = shortnames[idx];
   var elem = $('#js_emojiContainer')[0];
   elem.innerHTML = emojione.shortnameToImage(emoji1 + emoji2);
+  console.log(emoji1, emoji2);
 };
 
 $(document).ready(function () {

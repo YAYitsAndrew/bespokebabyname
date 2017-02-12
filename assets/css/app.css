@@ -1,3 +1,17 @@
+.page_header {
+  margin-bottom: 2em;
+}
+
+.page_footer {
+  margin-top: 2em;
+}
+
 .emoji-heading {
   font-size: 128px;
+}
+
+@media (max-width: 767px) {
+  .emoji-heading {
+    font-size: 86px;
+  }
 }
