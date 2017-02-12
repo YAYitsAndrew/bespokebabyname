@@ -13,5 +13,11 @@ $(document).ready(function () {
   emojione.sprites = true;
   emojione.imagePathSVGSprites = 'assets/img/emojione.sprites.svg';
 
+  $('.convert-emoji').each(function () {
+      var original = $(this).html();
+      var converted = emojione.shortnameToImage(original);
+      $(this).html(converted);
+  });
+
   generateName();
 });
